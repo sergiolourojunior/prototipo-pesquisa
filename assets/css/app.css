@@ -55,8 +55,14 @@ a { color: inherit; }
 .titulo-pagina { margin: 40px 0; }
 .titulo-pagina h2 { margin-bottom: 20px; }
 
+/* Pesquisa */
 .resultados { background-color: #EFEFEF; padding: 20px 0; }
-.result-item { display: flex; background-color: #FFF; margin: 0 -15px 20px; padding: 10px 15px 0; }
+.result-item { display: flex; background-color: #FFF; margin: 0 -15px 20px; padding: 10px 15px 0; text-decoration: none; }
 .result-item .img { width: 80px; height: 80px; display: inline-block; background-color: #CCC; border-radius: 50%; }
 .result-item .result-info { padding-left: 15px; width: calc(100% - 80px); }
 .result-item p { font-size: 14px; }
+
+/* Perfil */
+.perfil { margin-top: 40px; }
+.perfil .img { width: 120px; height: 120px; display: inline-block; background-color: #CCC; border-radius: 50%; }
+.perfil .descricao { margin: 40px 0; }

@@ -18,7 +18,7 @@
 
                 <div class="titulo-pagina">
                     <div class="form-group">
-                        <input type="text" id="search" class="form-control" placeholder="Procure pela cidade e especialidade">
+                        <input type="text" id="search" class="form-control" placeholder="Faça sua pesquisa">
                     </div>
 
                     <div class="form-group">
@@ -26,7 +26,7 @@
                     </div>
 
                     <p>
-                        <strong>Pesquisas relacionadas:</strong><br><a href="#">Dra. Sônia Brasil</a>, <a href="#">Dra. Fernanda Oliveira</a>
+                        <strong>Pesquisas relacionadas:</strong><br><a href="#">Sônia Brasil</a>, <a href="#">Rafaela Oliveira</a>
                     </p>
                 </div>
 
@@ -44,10 +44,18 @@
 
                 <div class="col-12">
 
+                    <a href="perfil.html" class="result-item">
+                        <div class="img"></div>
+                        <div class="result-info">
+                            <h2>Rodrigo Carvalho</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit, erat quis consectetur condimentum, elit ex maximus nibh, eu volutpat ex orci sed neque.</p>
+                        </div>
+                    </a>
+
                     <div class="result-item">
                         <div class="img"></div>
                         <div class="result-info">
-                            <h2>Dr. Rodrigo Carvalho</h2>
+                            <h2>Rafaela Oliveira</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit, erat quis consectetur condimentum, elit ex maximus nibh, eu volutpat ex orci sed neque.</p>
                         </div>
                     </div>
@@ -55,15 +63,7 @@
                     <div class="result-item">
                         <div class="img"></div>
                         <div class="result-info">
-                            <h2>Dra. Fernanda Oliveira</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit, erat quis consectetur condimentum, elit ex maximus nibh, eu volutpat ex orci sed neque.</p>
-                        </div>
-                    </div>
-
-                    <div class="result-item">
-                        <div class="img"></div>
-                        <div class="result-info">
-                            <h2>Dra. Sônia Brasil</h2>
+                            <h2>Sônia Brasil</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit, erat quis consectetur condimentum, elit ex maximus nibh, eu volutpat ex orci sed neque.</p>
                         </div>
                     </div>
@@ -81,14 +81,13 @@
     <script>
         $( function() {
             var availableTags = [
-                "Psiquiatra Pelotas",
-                "Psicologo em Pelotas",
-                "Psiquiatria em Pelotas",
-                "Psicologia Pelotas",
-                "Psiquiatria Santa Maria",
-                "Psiquiatria em Joinville",
-                "Psicologo em Londrina",
-                "Psiquiatra em Caxias do Sul"
+                "Nutricionista Pelotas",
+                "Neurologista em Pelotas",
+                "Neurologista em Londrina",
+                "Nutricionista em Caxias do Sul",
+                "Rodrigo Carvalho",
+                "Rafaela Oliveira",
+                "Sônia Brasil"
             ];
 
             $( "#search" ).autocomplete({
