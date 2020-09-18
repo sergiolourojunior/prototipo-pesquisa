@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo Versão A</title>
+
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body class="vertical-center">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="form-group">
+                    <select class="form-control" id="select-cidade">
+                        <option>Selecione a cidade</option>
+                        <option>Atendimento / ON</option>
+                        <option>Atendimento Gratuito / OG</option>
+                        <option>Blumenau / SC</option>
+                        <option>Cambé / PR</option>
+                        <option>Campinas / SP</option>
+                        <option>Campo Grande / MS</option>
+                        <option>Cascavel / PR</option>
+                        <option>Caxias do Sul / RS</option>
+                        <option>Cuiabá / MT</option>
+                        <option>Curitiba / PR</option>
+                        <option>Florianópolis / SC</option>
+                        <option>Joinville / SC</option>
+                        <option>Londrina / PR</option>
+                        <option>Maringá / PR</option>
+                        <option>Pelotas / RS</option>
+                        <option>Ponta Grossa / PR</option>
+                        <option>Porto Alegre / RS</option>
+                        <option>Ribeirão Preto / SP</option>
+                        <option>Salvador / BA</option>
+                        <option>Santa Maria / RS</option>
+                        <option>São José dos Campos / SP</option>
+                        <option>São Lourenço do Sul / RS</option>
+                        <option>Sorocaba / SP</option>
+                        <option>Uberlândia / MG</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control" id="select-especialidade">
+                        <option>Selecione a especialidade</option>
+                        <option>Acupuntura</option>
+                        <option>Alergia e imunologia</option>
+                        <option>Alergia e Imunologia Pediátrica</option>
+                        <option>Cardiologia</option>
+                        <option>Cirurgia Cardiovascular</option>
+                        <option>Cirurgia da mão</option>
+                        <option>Cirurgia do Aparelho Digestivo</option>
+                        <option>Cirurgia Geral</option>
+                        <option>Cirurgia Oncológica</option>
+                        <option>Cirurgia Vascular</option>
+                        <option>Cirurgião Pediátrico</option>
+                        <option>Clínico Geral</option>
+                        <option>Clínico Geral - Obesidade</option>
+                        <option>Coloproctologia</option>
+                        <option>Dentista</option>
+                        <option>Dermatologia</option>
+                        <option>Endocrinologia e Metabologia</option>
+                        <option>Endocrinologia e metabologia - Emagrecimento</option>
+                        <option>Endocrinologia e Metabologia Pediátrica</option>
+                        <option>Gastroenterologia</option>
+                        <option>Geriatria e gerontologia</option>
+                        <option>Ginecologia e obstetrícia</option>
+                        <option>Hematologia e hemoterapia</option>
+                        <option>Hepatologia</option>
+                        <option>Homeopatia</option>
+                        <option>Infectologia</option>
+                        <option>Mastologia</option>
+                        <option>Medicina do esporte</option>
+                        <option>Medicina do trabalho</option>
+                        <option>Medicina Física e Reabilitação - Fisiatria</option>
+                        <option>Nefrologia</option>
+                        <option>Neurocirurgia</option>
+                        <option>Neurologia</option>
+                        <option>Nutricionista</option>
+                        <option>Oftalmologia</option>
+                        <option>Oncologia</option>
+                        <option>Ortopedia e traumatologia</option>
+                        <option>Otorrinolaringologia</option>
+                        <option>Pediatria</option>
+                        <option>Pneumologia</option>
+                        <option>Psicologia</option>
+                        <option>Psicologia - Infantil</option>
+                        <option>Psiquiatria</option>
+                        <option>Reumatologia</option>
+                        <option>Urologia</option>
+                    </select>
+                </div>
+
+                <a href="resultado.html" class="btn btn-block" id="btn-submit">Pesquisar</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var btn = document.getElementById('btn-submit');
+        var cidade = document.getElementById('select-cidade');
+        var especialidade = document.getElementById('select-especialidade');
+
+        btn.onclick = function () {
+
+            event.preventDefault();
+
+            if(cidade.value == 'Pelotas / RS' && especialidade.value == 'Nutricionista') {
+                location.href = 'resultado.html';
+            } else {
+                location.href = 'nao-encontrado.html';
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

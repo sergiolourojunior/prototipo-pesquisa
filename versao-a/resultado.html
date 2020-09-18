@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protótipo Versão B</title>
+    <title>Protótipo Versão A</title>
 
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 <body>
 
@@ -16,18 +16,16 @@
 
             <div class="col-12">
 
+                <div class="clearfix">
+
+                    <a href="./" class="btn pull-right">Nova pesquisa</a>
+
+                </div>
+
                 <div class="titulo-pagina">
-                    <div class="form-group">
-                        <input type="text" id="search" class="form-control" placeholder="Procure pela cidade e especialidade">
-                    </div>
-
-                    <div class="form-group">
-                        <a href="resultadoB.html" class="btn btn-block">Pesquisar</a>
-                    </div>
-
-                    <p>
-                        <strong>Pesquisas relacionadas:</strong><br><a href="#">Dra. Sônia Brasil</a>, <a href="#">Dra. Fernanda Oliveira</a>
-                    </p>
+                    <h1>Psiquiatra Pelotas</h1>
+                    <h2>Psiquiatra em Pelotas</h2>
+                    <p>Psiquiatra Pelotas - Selecione um horário e agende sua consulta.</p>
                 </div>
 
             </div>
@@ -74,31 +72,6 @@
         </div>
 
     </div>
-
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $( function() {
-            var availableTags = [
-                "Psiquiatra Pelotas",
-                "Psicologo em Pelotas",
-                "Psiquiatria em Pelotas",
-                "Psicologia Pelotas",
-                "Psiquiatria Santa Maria",
-                "Psiquiatria em Joinville",
-                "Psicologo em Londrina",
-                "Psiquiatra em Caxias do Sul"
-            ];
-
-            $( "#search" ).autocomplete({
-                source: availableTags,
-                select: function( event, ui ) {
-                    location.href = "resultadoB.html";
-                }
-            });
-        } );
-    </script>
 
 </body>
 </html>
